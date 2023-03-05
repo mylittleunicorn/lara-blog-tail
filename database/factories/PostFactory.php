@@ -14,8 +14,8 @@ class PostFactory extends Factory
             'excerpt' => fake()->paragraph(),
             'body' => fake()->paragraph(mt_rand(5, 10)),
             'status' => fake()->randomElement(['publish' ,'draft']),
-            'user_id' => mt_rand(1, 5),
-            'category_id' => mt_rand(1, 2),
+            'user_id' => mt_rand(1, 3),
+            'category_id' => mt_rand(1, 5),
         ];
     }
 }
